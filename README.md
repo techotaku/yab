@@ -1,7 +1,7 @@
 # yab
 
 YAB is Yet Another (Jekyll) Bootstrap theme. Its style is similar to Jekyll Bootstrap.  
-In fact, Jekyll Bootstrap isn't compatible with latest Jekyll, so I make this gem theme. 
+In fact, Jekyll Bootstrap isn't compatible with latest Jekyll, so I make this [gem theme](https://rubygems.org/gems/yab). 
 
 ## Installation
 
