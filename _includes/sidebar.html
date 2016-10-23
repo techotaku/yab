@@ -1,0 +1,45 @@
+{% if page.date %}
+<br />
+<h4 class="tag_box title">
+    <i class="glyphicon glyphicon glyphicon-calendar"></i><span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+</h4>
+{% endif %}
+{% if page.author %}
+<br />
+<h4 class="tag_box title">
+    <i class="glyphicon glyphicon-folder-open"></i><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+</h4>
+{% endif %}
+{% unless categories_list == empty %}
+<br />
+<h4 class="tag_box title"><i class="glyphicon glyphicon-folder-open"></i><span>Categories</span></h4>
+<ul class="tag_box tag_outer inline">
+    {% if categories_list.first[0] == nil %}
+        {% for category in categories_list %}
+    <li><a href="/{{ site.baseurl }}categories.html#{{ category }}-ref">{{ category | join: "/" }} <span>{{ site.categories[category].size }}</span> </a></li>
+        {% endfor %}
+    {% else %}
+        {% for category in categories_list %}
+    <li><a href="/{{ site.baseurl }}categories.html#{{ category[0] }}-ref">{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span> </a></li>
+        {% endfor %}
+    {% endif %}
+</ul>
+{% endunless %}
+{% assign categories_list = nil %}
+{% unless tags_list == empty %}
+<br />
+<h4 class="tag_box title"><i class="glyphicon glyphicon-tags"></i><span>Tags</span></h4>
+<ul class="tag_box tag_outer inline">
+    {% if tags_list.first[0] == nil %}
+        {% for tag in tags_list %}
+    <li><a href="/{{ site.baseurl }}tags.html#{{ tag }}-ref">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+        {% endfor %}
+    {% else %}
+        {% for tag in tags_list %}
+    <li><a href="/{{ site.baseurl }}tags.html#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+        {% endfor %}
+    {% endif %}
+
+</ul>
+{% endunless %}
+{% assign tags_list = nil %}

@@ -2,4 +2,18 @@
 layout: default
 ---
 
+<article>
+    <div class="page-header">
+        <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
 {{ content }}
+        </div>
+        <div class="col-md-3">
+{% assign categories_list = site.categories %}
+{% assign tags_list = site.tags %}
+{% include sidebar.html %}
+        </div>
+    </div>
+</article>

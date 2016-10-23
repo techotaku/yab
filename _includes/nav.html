@@ -1,0 +1,18 @@
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="font-size:175%;" href="{{ site.baseurl | prepend: site.url }}">{{ site.title }}</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+{% for node in site.pages %}
+    {% if node.title != null and "navigation" == node.group %}
+        {% if page.url == node.url %}
+                    <li class="active"><a href="{{node.url | prepend: site.baseurl }}">{{node.title}}</a></li>
+        {% else %}
+                    <li><a href="{{node.url | prepend: site.baseurl }}">{{node.title}}</a></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+                </ul>
+            </div>
+        </nav>

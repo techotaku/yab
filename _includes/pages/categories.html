@@ -1,0 +1,16 @@
+<ul class="tag_box inline" style="padding-left: 0px;">
+{% for category in site.categories %}
+    <li><a href="#{{ category[0] }}-ref">{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span> </a></li>
+{% endfor %}
+</ul>
+
+{% for category in site.categories %} 
+<h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+<ul>
+    {% for node in category[1] %}
+        {% if node.title != null %}
+    <li><a href="{{ node.url | prepend: site.baseurl }}">{{node.title}}</a></li>
+        {% endif %}
+  {% endfor %}
+ </ul>
+{% endfor %}
