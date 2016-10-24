@@ -1,12 +1,16 @@
 @import "_bootstrap";
 
 body {
-  font-family: Arial,"Microsoft YaHei",SimSun,sans-serif;
-}
+  font-family: Arial,"Microsoft YaHei",SimSun,sans-serif; }
+
+img {
+  max-width: 100%; }
 
 .content {
-  padding-left: 16px;
-}
+  padding-left: 16px; }
+
+.sitebar_outer {
+  padding-left: 24px; }
 
 .tag_box.title span {  
   padding-left: 8px; }
@@ -15,9 +19,6 @@ body {
   list-style: none;  
   margin: 0;
   overflow: hidden; }
-
-.tag_box.tag_outer {
-  padding-left: 24px; }
   
 .tag_box li {
   line-height: 28px; }
@@ -48,3 +49,11 @@ body {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.friend_links {
+  list-style: none; 
+  margin: 0;
+  overflow: hidden; }
+
+.friend_links a {
+  text-decoration: none; }

@@ -1,0 +1,4 @@
+{% for page in site.pages %}
+{{ page.url | prepend: site.baseurl | prepend: site.url }}{% endfor %}
+{% for post in site.posts %}
+{{ post.url | prepend: site.baseurl | prepend: site.url }}{% endfor %}
