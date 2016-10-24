@@ -1,7 +1,9 @@
-# yab
+# Yab
 
-YAB is Yet Another (Jekyll) Bootstrap theme. Its style is similar to Jekyll Bootstrap.  
-In fact, Jekyll Bootstrap isn't compatible with latest Jekyll, so I make this [gem theme](https://rubygems.org/gems/yab). 
+[![Gem Version](https://badge.fury.io/rb/yab.svg)](https://rubygems.org/gems/yab)
+
+Yab is Yet Another (Jekyll) Bootstrap theme. Its style is similar to Jekyll Bootstrap.  
+In fact, Jekyll Bootstrap isn't compatible with latest Jekyll, so I make this theme. 
 
 ## Installation
 
@@ -10,7 +12,7 @@ Add this line to your Jekyll site's Gemfile:
 ```ruby
 gem "yab"
 gem "jekyll-bootstrap-sass", "~> 0.1.0"
-gem "bootstrap-sass", "~> 3.3.7"
+gem "bootstrap-sass", "~> 3.3"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
