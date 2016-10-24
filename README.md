@@ -68,6 +68,11 @@ To enable Google Anaytics, add the following lines to your Jekyll site:
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
+## Coming features
+
+* Posts pagination  
+* **Internationalization (i18n) support**  
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/techotaku/yab.

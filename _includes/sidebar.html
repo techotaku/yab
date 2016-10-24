@@ -1,7 +1,7 @@
 {% if page.date %}
 <br />
 <h4 class="tag_box title">
-    <i class="glyphicon glyphicon glyphicon-calendar"></i><span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+    <i class="glyphicon glyphicon glyphicon-calendar"></i><span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %e, %Y" }}</time></span>
 </h4>
 {% endif %}
 {% if page.author %}
