@@ -70,8 +70,9 @@ Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 ## Coming features
 
+* **Quickly deploy to GitHub Pages repository (auto-copy)**  
 * Posts pagination  
-* **Internationalization (i18n) support**  
+* Internationalization (i18n) support  
 
 ## Contributing
 
