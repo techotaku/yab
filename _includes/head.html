@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-    {% endif %}
+    {% if site.feed.path != null %}<link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ site.feed.path | prepend: '/' | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+    {% if jekyll.environment == 'production' and site.google_analytics %}{% include google-analytics.html %}{% endif %}
 </head>

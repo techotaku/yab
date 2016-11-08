@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
+
+require "version"
+require "mercenary"
+
+Mercenary.program(:Yab) do |p|
+  p.version Yab::VERSION
+  p.description "Yab is Yet Another (Jekyll) Bootstrap theme."
+  p.syntax "yab <command>"
+
+  p.command(:deploy) do |c|
+    c.syntax "deploy"
+    c.description "[Coming soon] Copy necessary files to Github Pages repository."
+
+    c.action do |_, _|
+      puts "Coming soon."
+    end
+  end
+
+end

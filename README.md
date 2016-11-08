@@ -11,10 +11,6 @@ Add this line to your Jekyll site's Gemfile:
 
 ```ruby
 gem "yab"
-gem "jekyll-bootstrap-sass", "~> 0.1.0"
-gem "bootstrap-sass", "~> 3.3"
-gem "jekyll-sitemap", "~> 0.12.0"
-gem "jekyll-feed", "~> 0.8.0"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
@@ -29,6 +25,9 @@ gems:
 
 bootstrap:
   assets: true
+
+feed:
+  path: feed.xml
 ```
 
 And then execute:
