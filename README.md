@@ -63,7 +63,7 @@ At last, create (or update if already exists) the CSS entrypoint at site source 
 
 Some tips, make things easier:  
 * `site.url` doesn't end with `/`  
-* Single `/` for `site.baseurl` is NOT recommended, use `` (bland) instead.  
+* Single `/` for `site.baseurl` is NOT recommended, use `` (blank) instead.  
 
 ### Enabling feed (via jekyll-feed)  
 
