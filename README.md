@@ -7,7 +7,7 @@ In fact, Jekyll Bootstrap isn't compatible with latest Jekyll, so I make this th
 
 ## Features  
 
-### Now (0.3.1)  
+### Now (0.3.2)  
 
 * Categories page  
 * Archives page  
