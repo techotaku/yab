@@ -37,7 +37,7 @@ And add these lines to your Jekyll site's `_config.yml`:
 ```yaml
 theme: yab
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-bootstrap-sass
   - jekyll-feed
